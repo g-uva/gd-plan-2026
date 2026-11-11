@@ -196,60 +196,61 @@
                <tr>
                     <th>Deliverable / formal lead</th>
                     <th>Our contribution and reported status</th>
-                    <th>Dependencies / immediate disposition</th>
-                    <th>Builds on</th>
+                    <th>Comments, other things to consider</th>
                </tr>
           </thead>
           <tbody>
                <tr>
-                    <td>D6.1 — Final report on the metric publication system and energy-aware brokering logic / SZTAKI
+                    <td>D6.1: Final report on the metric publication system and energy-aware brokering logic / SZTAKI
                     </td>
-                    <td>Contribute the relevant design, integration and performance evidence after the expected input is
-                         available. Precise contribution boundary remains to be agreed.</td>
-                    <td>Waiting for Catalin. Hold substantive implementation and contribution drafting pending the
-                         guidelines using AI-assisted tools; retain a checklist of evidence to request.</td>
-                    <td>D4.2 architecture; D3.2 environmental methodology; D7.1 integration plan. Review the actual
-                         documents before asserting conformance.</td>
+                    <td>Currently at 95%. Our effort should be minimal. The main features Catalin is pushing, by order of importance:
+                         <ol>
+                              <li>EGI Check-in Production: we need to abide to some strict stuff. TBD</li>
+                              <li>Filtering feature, requested by some partners.</li>
+                              <li>Private grouping, implemented minimally. Need to validate and make sure it is good.</li>
+                         </ol>
+
+                    </td>
+                    <td>
+                         <span style="font-weight:bold;">It should take a few days for the EGI Check-in into production endeavour to work. 
+                              Already made the list of features.</span>
+                         Just writing, mostly Catalin's overview. From ENSURE's last meeting, there are some things
+                         that we consider: (1) private groups, (2) filtering, and (3) VO validation (a central service to verify
+                         the RI/site fidedignity, not yet implemented) may be used as "starting point".
+                    </td>
+
                </tr>
                <tr>
-                    <td>D6.2 — Final report on modelling and orchestration of interconnected RIs / UTH</td>
-                    <td>Kickstarted. A minimal implementation is in place, according to the coordinator. Develop an ML
+                    <td>D6.2: Final report on modelling and orchestration of interconnected RIs / UTH</td>
+                    <td>Prototype needs polishing and report kickstarted by Kostas. A minimal implementation is in place, according to the coordinator. Develop an ML
                          model that makes a decision and returns an actionable output; extend model options and
-                         configuration to make the implementation complete.</td>
-                    <td>Hold substantive implementation and contribution drafting pending the guidelines using
-                         AI-assisted tools. Model interfaces, available input data and intended orchestration consumer
-                         must be agreed.</td>
-                    <td>D4.2 architecture and requirements; D3.2 measurement methodology; D7.1 integration plan.
-                         Existing minimal implementation is a starting point, not validated performance evidence.</td>
+                         configuration to make the implementation complete. The report should use
+                         our contribution from these last technical/practical implementations.
+                    </td>
+                    <td>Nothing to declare.</td>
                </tr>
                <tr>
-                    <td>D7.2 — Report on provider and user side validation activities / CSIC</td>
-                    <td>Use cases are in place, according to the coordinator. Prioritise workflow validation: deployable
+                    <td>D7.2: Report on provider and user side validation activities / CSIC</td>
+                    <td>Use cases are in-place (except for EBRAINS). Prioritise workflow validation: deployable
                          JuVRE orchestration workflow and GPU use case in our own environment. Build O3/O4 evidence and
                          later expand the user base.</td>
-                    <td>JuVRE depends on Krisztian's OpenStack implementation; access is available. Prepare a package
-                         for subsequent sharing and review. GPU environment/access and Jaime's precise role require
-                         clarification: the supplied note ends “Jaime has”. User recruitment follows prototype maturity;
-                         prepare measurement and onboarding criteria now.</td>
-                    <td>D5.1 VRE design and prototype; D7.1 integration plan; D4.2 architecture; D3.2 methodology.
-                         Reference D6.1/D6.2 results when available, without blocking independent workflow validation.
-                    </td>
+                    <td>JuVRE depends on Krisztian's OpenStack implementation; access is available. I will prepare a package
+                         for sharing and review. GPU environment validation will be done in our server. If time allows, I will
+                         contact Jaime for implementation within OpenStack, as they solved the GPU telemetry connection I believe.
+                         User recruitment follows prototype maturity; prepare measurement and onboarding criteria now.</td>
                </tr>
                <tr>
-                    <td>D2.1 — Final Data Management Plan / MI</td>
+                    <td>D2.1: Final Data Management Plan / MI</td>
                     <td>Optional personal contribution: write or review implementation-related data-management content.
                     </td>
                     <td>Coordinate with the lead when a draft is available.</td>
-                    <td>D1.2 initial Data Management Plan, Ethics and AI use practices; actual data, metadata, software
-                         and preservation decisions.</td>
                </tr>
                <tr>
-                    <td>D2.2 — Policy briefing 2 / UvA</td>
+                    <td>D2.2: Policy briefing 2 / UvA</td>
                     <td>Optional personal contribution: write or review technical findings and implications. UvA remains
                          the formal lead.</td>
                     <td>Use verified final results and the official template; avoid extrapolating unvalidated benefits.
                     </td>
-                    <td>D1.3 Policy briefing 1; relevant final technical evidence and project recommendations.</td>
                </tr>
           </tbody>
      </table>
